@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NATH-OS // Portfolio
 
-# Run and deploy your AI Studio app
+**Operator:** Aakash Nath  
+**Role:** Software Engineer (AI/ML)
 
-This contains everything you need to run your app locally.
+## Overview
+NATH-OS is a high-fidelity, military-themed tactical operating system simulation serving as an interactive portfolio. It demonstrates advanced frontend engineering skills using React, TypeScript, and Tailwind CSS.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1R6EAHqOj1I17TCjFZQbLPkUIuKoficq1
+## Features
 
-## Run Locally
+### 🖥️ Tactical Dashboard
+- **Tiling Window Manager**: Rigid, grid-based layout inspired by i3wm and military interfaces.
+- **Global Theater**: Interactive map visualizing simulated global intelligence reports.
+- **SOC Intel Workstation**: A gamified Security Operations Center where users analyze raw intel cables, flag threats, and manage DEFCON levels.
 
-**Prerequisites:**  Node.js
+### 📟 Interactive Terminal
+- **CLI**: Fully functional command-line interface.
+- **Tools**: Simulated hacker tools including `nmap`, `hydra`, `sqlmap`, `john`, and `setoolkit`.
+- **AI Tutor**: `explain <concept>` command powered by Google Gemini to teach cybersecurity topics.
+- **File System**: Mock file system navigation (`cd`, `ls`, `cat`).
 
+### 🤖 AI Integration
+- **Resume Analysis**: The `analyze` command uses Gemini to audit the portfolio owner's resume.
+- **Chatbot**: An AI co-pilot for answering questions about the candidate's skills and experience.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Tech Stack
+- **Frontend**: React 19, TypeScript, Tailwind CSS
+- **AI**: Google GenAI SDK (Gemini 2.5 Flash & 3.0 Pro)
+- **Icons**: Lucide React
+
+## Access
+System requires a simulated secure login (Password: `admin`, TOTP: `123456`).

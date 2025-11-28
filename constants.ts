@@ -40,6 +40,37 @@ SKILLS
 - Concepts: NLP, ML Models, REST APIs, OOPs, Data Structures
 `;
 
+export const README_TEXT = `# NATH-OS // TACTICAL PORTFOLIO v1.0.4
+======================================
+OPERATOR: AAKASH NATH
+CLASS: SOFTWARE ENGINEER
+======================================
+
+[ABOUT THE OPERATOR]
+I am a Software Engineer based in Kolkata, specializing in AI/ML and NLP.
+I graduated in 2025 with a B.Tech in CSE (8.36/10.00).
+My expertise lies in building intelligent user interfaces and integrating LLMs into practical workflows.
+
+[ABOUT THIS SYSTEM]
+NATH-OS is a React-based portfolio simulation designed to mimic a high-security military intelligence workstation.
+It features:
+- A fully interactive Tiling Window Manager interface.
+- Real-time "Global Theater" intelligence mapping.
+- A "SOC_INTEL" workstation for threat assessment simulations.
+- A functional Terminal with simulated penetration testing tools (nmap, hydra, sqlmap).
+- An AI Co-Pilot powered by Google Gemini.
+
+[USAGE]
+- Navigate using the Sidebar or the Terminal.
+- Type 'help' in the terminal to see available commands.
+- Use 'analyze' to get an AI critique of my resume.
+- Use 'explain <topic>' to learn about cybersecurity concepts.
+
+[STATUS]
+SYSTEM: ONLINE
+DEFCON: VARIABLE
+ENCRYPTION: ENABLED`;
+
 export const MOCK_FILE_SYSTEM: { [key: string]: FileSystemNode } = {
   root: {
     name: 'root',
@@ -53,6 +84,11 @@ export const MOCK_FILE_SYSTEM: { [key: string]: FileSystemNode } = {
             name: 'guest',
             type: 'directory',
             children: {
+              'README.md': {
+                name: 'README.md',
+                type: 'file',
+                content: README_TEXT
+              },
               'resume.txt': {
                 name: 'resume.txt',
                 type: 'file',

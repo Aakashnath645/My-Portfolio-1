@@ -212,11 +212,11 @@ const ProjectsView = () => (
             link="https://github.com/Aakashnath645/PARKIT--Parking-Management-System-"
         />
         <ProjectCard 
-            title="Sort Visualizer" 
-            year="2023" 
-            tech="JavaScript, Canvas" 
-            desc="Real-time visualization of sorting algorithms with dynamic user interface."
-            link="https://github.com/Aakashnath645/Sorting-Visualizer"
+            title="Sentinel - Planetary Surveillance" 
+            year="2024" 
+            tech="React, Three.js, WebGL" 
+            desc="High-fidelity 3D visualization platform tracking 25,000+ active satellites and orbital debris in real-time using NORAD TLE data."
+            link="https://github.com/Aakashnath645/Sentinel"
         />
     </div>
 );

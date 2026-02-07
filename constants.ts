@@ -30,9 +30,10 @@ PROJECTS
    - Responsive front-end, automated billing, space reservation.
    - 12 Weeks (2024).
 
-3. Sorting Algorithm Visualizer (JavaScript, HTML/CSS)
-   - Interactive sorting visualization with canvas.
-   - 10 Weeks (2023).
+3. Sentinel - Planetary Surveillance Network (React, Three.js, WebGL)
+   - Real-time 3D orbital tracking system visualizing 20,000+ satellites/debris.
+   - Integrated NASA/NORAD TLE data streams for precise trajectory prediction.
+   - 14 Weeks (2024).
 
 SKILLS
 - Languages: Python, Java, JavaScript, HTML, CSS, SQL
@@ -116,6 +117,11 @@ export const MOCK_FILE_SYSTEM: { [key: string]: FileSystemNode } = {
                     name: 'classifier.md',
                     type: 'file',
                     content: "# Resume Classifier\nAI-powered analysis using Google Gemini and Python."
+                  },
+                  'sentinel.md': {
+                    name: 'sentinel.md',
+                    type: 'file',
+                    content: "# Sentinel Network\n3D Orbital visualization tool using Three.js and Satellite.js.\nTracks 20k+ objects in real-time."
                   }
                 }
               },

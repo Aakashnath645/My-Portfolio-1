@@ -21,19 +21,27 @@ Saregama India Ltd. (IT & Technology Intern) | Feb 2025 - Jul 2025
 - Integrated AI modules into internal dashboards.
 
 PROJECTS
-1. Resume Classifier using LLMs (Python, Gemini, TF-IDF)
-   - AI-powered web app for resume analysis/job matching.
-   - Built with Streamlit, supports PDF/DOCX, batch processing.
-   - 22 Weeks (2025).
+1. Resume Classifier (Python, Gemini, Streamlit)
+   - Developed an AI-powered web application for resume analysis and job description matching with help of Google's Gemini AI model.
+   - Built the application with Streamlit and Python to enhance the candidate evaluation process.
+   - Implemented multi-format support to allow uploads of resumes in PDF, DOCX, and DOC formats.
+   - Enabled batch processing for simultaneous upload and evaluation of multiple resumes.
+   - Created an interactive dashboard providing real-time analytics on match scores.
+   - Designed a feature for custom report generation in PDF/DOCX formats.
+   - Integrated role-based scoring (Junior/Mid/Senior) and ATS compatibility scanning.
+   - Developed department-specific analysis with customizable metrics (Tech, HR, Marketing).
 
 2. PARKIT - Parking Management System (HTML, CSS, Flask, SQLite)
-   - Responsive front-end, automated billing, space reservation.
-   - 12 Weeks (2024).
+   - Developed a responsive front-end utilizing Flask and SQLite backend.
+   - Implemented space reservation and automated billing systems.
+   - Enhanced user experience and improved efficiency in parking space utilization.
 
-3. Sentinel - Planetary Surveillance Network (React, Three.js, WebGL)
-   - Real-time 3D orbital tracking system visualizing 20,000+ satellites/debris.
-   - Integrated NASA/NORAD TLE data streams for precise trajectory prediction.
-   - 14 Weeks (2024).
+3. Sentinel - Planetary Surveillance Network (React 19, TypeScript, Leaflet)
+   - Built a real-time geospatial dashboard using React 19, TypeScript, and Leaflet for global seismic tracking.
+   - Integrated Google Gemini AI to provide automated situational analysis and critical infrastructure mapping.
+   - Designed a high-fidelity cinematic UI with Tailwind CSS, featuring physics simulations.
+   - Engineered a robust data layer to normalize and render sub-second telemetry from USGS and NOAA APIs.
+   - Developed advanced geospatial features, including proximity alerts and interactive tectonic plate overlays.
 
 SKILLS
 - Languages: Python, Java, JavaScript, HTML, CSS, SQL
@@ -111,17 +119,17 @@ export const MOCK_FILE_SYSTEM: { [key: string]: FileSystemNode } = {
                   'parkit.md': {
                     name: 'parkit.md',
                     type: 'file',
-                    content: "# PARKIT\nParking Management System using Flask and SQLite."
+                    content: "# PARKIT\n- Responsive front-end (Flask, SQLite).\n- Automated billing and reservation.\n- Real-world applicability."
                   },
                   'classifier.md': {
                     name: 'classifier.md',
                     type: 'file',
-                    content: "# Resume Classifier\nAI-powered analysis using Google Gemini and Python."
+                    content: "# Resume Classifier\n- AI-powered analysis (Gemini).\n- Streamlit/Python based.\n- Multi-format batch processing.\n- ATS compatibility."
                   },
                   'sentinel.md': {
                     name: 'sentinel.md',
                     type: 'file',
-                    content: "# Sentinel Network\n3D Orbital visualization tool using Three.js and Satellite.js.\nTracks 20k+ objects in real-time."
+                    content: "# Sentinel Network\n- Real-time geospatial dashboard (React 19, Leaflet).\n- Gemini AI integration.\n- Sub-second telemetry (USGS/NOAA).\n- Proximity alerts."
                   }
                 }
               },

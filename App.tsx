@@ -201,41 +201,66 @@ const ProjectsView = () => (
             title="Resume Classifier" 
             year="2025" 
             tech="Python, Gemini, TF-IDF" 
-            desc="AI-powered web app for resume analysis and job matching. Features interactive dashboard and batch processing."
+            desc={[
+                "Developed an AI-powered web application for resume analysis and job description matching with help of Google's Gemini AI model.",
+                "Built the application with Streamlit and Python to enhance the candidate evaluation process for recruiters and hiring managers.",
+                "Implemented multi-format support to allow uploads of resumes in PDF, DOCX, and DOC formats.",
+                "Enabled batch processing for simultaneous upload and evaluation of multiple resumes.",
+                "Created an interactive dashboard providing real-time analytics on match scores and department-wise performance.",
+                "Designed a feature for custom report generation in PDF/DOCX formats for individual or batch analysis.",
+                "Integrated role-based scoring to evaluate candidates based on levels such as Junior, Mid, and Senior.",
+                "Ensured ATS compatibility through keyword scanning and scoring mechanisms.",
+                "Developed department-specific analysis with customizable metrics for various fields including Tech, HR, and Marketing."
+            ]}
             link="https://github.com/Aakashnath645/Resume-Processing"
         />
         <ProjectCard 
             title="PARKIT System" 
             year="2024" 
             tech="HTML, CSS, Flask, SQLite" 
-            desc="Parking management system with automated billing and space reservation. Real-world applicability verified."
+            desc={[
+                "Developed a responsive front-end utilizing Flask and SQLite backend.",
+                "Implemented space reservation and automated billing systems, recognized for real-world applicability.",
+                "Enhanced user experience and improved efficiency in parking space utilization through system features."
+            ]}
             link="https://github.com/Aakashnath645/PARKIT--Parking-Management-System-"
         />
         <ProjectCard 
             title="Sentinel - Planetary Surveillance" 
-            year="2024" 
-            tech="React, Three.js, WebGL" 
-            desc="High-fidelity 3D visualization platform tracking 25,000+ active satellites and orbital debris in real-time using NORAD TLE data."
+            year="2026" 
+            tech="React 19, TypeScript, Leaflet" 
+            desc={[
+                "Built a real-time geospatial dashboard using React 19, TypeScript, and Leaflet for global seismic tracking.",
+                "Integrated Google Gemini AI to provide automated situational analysis and critical infrastructure mapping.",
+                "Designed a high-fidelity cinematic UI with Tailwind CSS, featuring physics simulations and automated patrol modes.",
+                "Engineered a robust data layer to normalize and render sub-second telemetry from USGS and NOAA APIs.",
+                "Developed advanced geospatial features, including proximity alerts and interactive tectonic plate overlays."
+            ]}
             link="https://github.com/Aakashnath645/Sentinel"
         />
     </div>
 );
 
-const ProjectCard: React.FC<{title: string, year: string, tech: string, desc: string, link: string}> = ({title, year, tech, desc, link}) => (
-    <div className="border border-green-800 bg-black/60 p-4 relative group hover:border-green-500 transition-colors flex flex-col">
+const ProjectCard: React.FC<{title: string, year: string, tech: string, desc: string[], link: string}> = ({title, year, tech, desc, link}) => (
+    <div className="border border-green-800 bg-black/60 p-4 relative group hover:border-green-500 transition-colors flex flex-col h-full overflow-hidden">
         <div className="absolute top-0 right-0 bg-green-900 text-green-100 px-2 py-0.5 text-[10px] font-bold">{year}</div>
         <div className="absolute top-0 left-0 w-2 h-2 bg-green-600"></div>
         <div className="absolute bottom-0 right-0 w-2 h-2 bg-green-600"></div>
         
         <h3 className="text-lg font-bold mb-2 text-green-200 group-hover:text-green-400">{title}</h3>
         <div className="text-[10px] uppercase text-green-600 mb-3 border-b border-green-900 pb-1">{tech}</div>
-        <p className="text-xs text-green-300 leading-relaxed mb-4">{desc}</p>
+        
+        <ul className="text-[10px] md:text-xs text-green-300 leading-relaxed mb-4 list-disc pl-4 space-y-1 flex-1 overflow-y-auto scrollbar-thin">
+            {desc.map((item, i) => (
+                <li key={i}>{item}</li>
+            ))}
+        </ul>
         
         <a 
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-auto w-full border border-green-800 hover:bg-green-900/50 text-xs py-2 text-green-500 uppercase flex items-center justify-center gap-2 transition-all hover:text-green-400 hover:border-green-500"
+            className="mt-auto w-full border border-green-800 hover:bg-green-900/50 text-xs py-2 text-green-500 uppercase flex items-center justify-center gap-2 transition-all hover:text-green-400 hover:border-green-500 shrink-0"
         >
             <Github size={14} /> Access Codebase <ExternalLink size={10} />
         </a>
